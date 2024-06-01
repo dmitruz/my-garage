@@ -1,6 +1,6 @@
 
 
-export const Home: React.FC = () => {
+export const HomePage: React.FC = () => {
     return (
         <div className="flex flex-col items-center">
             <h1>Garage</h1>
