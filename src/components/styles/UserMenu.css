@@ -1,0 +1,27 @@
+.userMenuWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userWelcome {
+    margin: 10px;
+}
+
+.button {
+    height: 40px;
+    width: 250px;
+    background: #4e6141;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: all 250ms ease-in-out;
+}
+
+.button:hover {
+    box-shadow: none;
+    color: white;
+    background: #8f8f8f;
+}

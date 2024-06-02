@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom';
+import './styles/AuthNav.css';
 
 export const AuthNav = () => {
     return (
         <div className="links mt-10 mb-30">
             <NavLink
-                className="link px-2.5 py-1 rounded-md text-black no-underline"
+                className="link"
                 to="/register"
                 style={({ isActive }) => ({
                     fontWeight: isActive ? '700' : '400',
@@ -14,7 +15,7 @@ export const AuthNav = () => {
                 Register
             </NavLink>
             <NavLink
-                className="link px-2.5 py-1 rounded-md text-black no-underline"
+                className="link"
                 to="/login"
                 style={({ isActive }) => ({
                     fontWeight: isActive ? '700' : '400',

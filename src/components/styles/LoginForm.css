@@ -1,0 +1,39 @@
+
+.form {
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+
+label {
+    width: 100%;
+}
+
+.inputField {
+    height: 40px;
+    background: #ecf0f3;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    text-indent: 20px;
+}
+
+.button {
+    height: 40px;
+    width: 250px;
+    background: #ecf0f3;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: all 250ms ease-in-out;
+}
+
+button:hover {
+    box-shadow: none;
+    color: white;
+    background: #4e6141;
+}

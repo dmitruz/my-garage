@@ -11,6 +11,8 @@ import { RegisterPage } from '../pages/RegisterPage';
 import { LoginPage } from '../pages/LoginPage';
 import { Garage } from '../pages/Garage';
 import { AppDispatch } from '../redux/store';
+import './styles/App.css';
+
 
 
 export const App = () => {
@@ -25,8 +27,8 @@ export const App = () => {
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
-    <section className="max-w-lg min-w-[320px] mx-auto my-7 bg-[#ecf0f3] rounded-[10px] shadow-[14px_14px_20px_#cbced1,-14px_-14px_20px_white]" >
-      <div className="mx-auto py-[15px] px-[20px]">
+    <section className="garage">
+      <div className="container">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />

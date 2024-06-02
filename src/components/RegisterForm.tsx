@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { register } from '../redux/auth/operations';
 import { AppDispatch } from '../redux/store';
+import './styles/RegisterForm.css';
 
 export const RegisterForm = () => {
     const dispatch = useDispatch<AppDispatch>();
@@ -24,21 +25,12 @@ export const RegisterForm = () => {
         form.reset();
     };
 
-    const inputStyle = {
-        boxShadow: 'inset 6px 6px 6px #cbced1, inset -6px -6px 6px white',
-        textIndent: '20px'
-    };
-
-    const buttonStyle = {
-        boxShadow: '6px 6px 6px #cbced1, -2px -2px 18px white'
-    };
-
     return (
-        <form className="form flex gap-1 flex-nowrap"
+        <form className="registerForm"
             onSubmit={handleSubmit} autoComplete="off">
-            <label className="w-full">
+            <label>
                 <input
-                    className="inputField h-10 w-full bg-[#ecf0f3] border border-transparent outline-none rounded-full text-gray-700 px-5 shadow-inner"
+                    className="inputFieldRegist"
                     type="text"
                     name="name"
                     placeholder="Username"
@@ -46,9 +38,9 @@ export const RegisterForm = () => {
                 />
             </label>
 
-            <label className="w-full">
+            <label>
                 <input
-                    className="inputField h-10 w-full bg-[#ecf0f3] border border-transparent outline-none rounded-full text-gray-700 px-5 shadow-inner"
+                    className="inputFieldRegist"
                     type="email"
                     name="email"
                     placeholder="Email"
@@ -56,10 +48,9 @@ export const RegisterForm = () => {
                 />
             </label>
 
-            <label className="w-full">
+            <label>
                 <input
-                    className="inputField h-10 w-full bg-[#ecf0f3] border border-transparent outline-none rounded-full text-gray-700 px-5 shadow-inner"
-                    style={inputStyle}
+                    className="inputFieldRegist"
                     type="password"
                     name="password"
                     placeholder="Password"
@@ -67,8 +58,7 @@ export const RegisterForm = () => {
                 />
             </label>
 
-            <button className="button h-10 w-[250px] bg-[#ecf0f3] border border-transparent outline-none rounded-full text-black cursor-pointer px-5 transition-all duration-250 ease-in-out"
-                style={buttonStyle}
+            <button className="buttonRegist"
                 type="submit">
                 Register
             </button>
@@ -76,13 +66,3 @@ export const RegisterForm = () => {
     );
 };
 
-
-const style = document.createElement('style');
-style.textContent = `
-  .button:hover {
-    box-shadow: none;
-    color: white;
-    background: #4e6141;
-  }
-`;
-document.head.append(style);
