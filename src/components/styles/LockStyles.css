@@ -1,0 +1,17 @@
+
+.garageBlock {
+    display: flex;
+    align-items: center;
+}
+
+.garageLock {
+    background-color: #696864;
+    display: block;
+    width: 120px;
+    margin-left: 150px;
+}
+
+.garageText {
+    margin: 0 0 0 10px;
+    padding: 0;
+}

@@ -9,7 +9,7 @@ import { refreshUser } from '../redux/auth/operations';
 import { HomePage } from '../pages/HomePage';
 import { RegisterPage } from '../pages/RegisterPage';
 import { LoginPage } from '../pages/LoginPage';
-import { Garage } from '../pages/Garage';
+import { GaragePage } from '../pages/GaragePage';
 import { AppDispatch } from '../redux/store';
 import './styles/App.css';
 
@@ -25,7 +25,7 @@ export const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <b>Please wait access...</b>
   ) : (
     <section className="garage">
       <div className="container">
@@ -45,7 +45,7 @@ export const App = () => {
               path="/login"
               element={
                 <RestrictedRoute
-                  redirectTo="/contacts"
+                  redirectTo="/garage"
                   component={<LoginPage />}
                 />
               }
@@ -55,7 +55,7 @@ export const App = () => {
               element={
                 <PrivateRoute
                   redirectTo="/login"
-                  component={<Garage />}
+                  component={<GaragePage />}
                 />
               }
             />
