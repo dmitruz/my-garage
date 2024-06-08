@@ -25,3 +25,8 @@
     font-size: 18px;
     font-style: italic;
 }
+
+.imgWrapper {
+    display: flex;
+    height: 300px;
+}

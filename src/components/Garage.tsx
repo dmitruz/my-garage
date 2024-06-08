@@ -1,5 +1,6 @@
 import Chevrolet from '../images/chevrolet.jpg';
 import Ford from '../images/ford.jpg';
+import Bmw from '../images/bmw.jpg';
 import './styles/Garage.css';
 
 export const Garage = () => {
@@ -10,7 +11,7 @@ export const Garage = () => {
                 <img className="carsImg" src={Chevrolet} alt="car" />
                 <div className="carInfo">
                     <h2 className="carTitle">
-                        Chevrolet Camaro 2024
+                        Chevrolet Camaro, 2024
                     </h2>
                     <span className="carPrice">
                         Price: 260$ / day
@@ -20,10 +21,20 @@ export const Garage = () => {
                 <img className="carsImg" src={Ford} alt="car" />
                 <div className="carInfo">
                     <h2 className="carTitle">
-                        Ford Mustang 2023
+                        Ford Mustang, 2023
                     </h2>
                     <span className="carPrice">
-                        Price: 210$ / day
+                        Price: 230$ / day
+                    </span>
+                </div>
+
+                <img className="carsImg" src={Bmw} alt="car" />
+                <div className="carInfo">
+                    <h2 className="carTitle">
+                        BMW I8, 2024
+                    </h2>
+                    <span className="carPrice">
+                        Price: 285$ / day
                     </span>
                 </div>
             </div>
