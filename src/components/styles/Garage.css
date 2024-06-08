@@ -1,0 +1,27 @@
+
+.carsSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.carsImg {
+    display: flex;
+    
+}
+
+.carInfo {
+    display: flex;
+    margin-top: 20px;
+}
+.carTitle {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.carPrice {
+    display: flex;
+    margin: 24px 0 0 24px;
+    font-size: 18px;
+    font-style: italic;
+}
