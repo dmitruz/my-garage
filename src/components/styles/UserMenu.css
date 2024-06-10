@@ -1,14 +1,15 @@
 .userMenuWrapper {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .userWelcome {
-    margin: 10px;
+    margin-right: 40px;
 }
 
 .button {
-    height: 40px;
+    height: 43px;
     width: 250px;
     background: #4e6141;
     border: 1px solid transparent;

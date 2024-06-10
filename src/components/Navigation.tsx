@@ -19,13 +19,13 @@ export const Navigation = () => {
             {isLoggedIn && (
                 <NavLink
                     className="link px-2.5 py-1 rounded-md text-black no-underline"
-                    to="/contacts"
+                    to="/garage"
                     style={({ isActive }) => ({
                         fontWeight: isActive ? '700' : '400',
                         background: isActive ? 'rgba(255, 255, 255, 0.8)' : 'transparent',
                     })}
                 >
-                    Contacts
+                    Garage
                 </NavLink>
             )}
         </nav>

@@ -11,7 +11,7 @@ export const UserMenu = () => {
 
     return (
         <div className="userMenuWrapper">
-            <h3 className="userWelcome m-10">Welcome, {user.name}</h3>
+            <h3 className="userWelcome">Welcome, {user.name}</h3>
             <button
                 className="button"
                 type="button"
