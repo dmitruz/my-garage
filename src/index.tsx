@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/my-garage'>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <App />
