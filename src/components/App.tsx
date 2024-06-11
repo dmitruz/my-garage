@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
@@ -29,38 +29,40 @@ export const App = () => {
   ) : (
     <section className="garage">
       <div className="container">
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route
-              path="/register"
-              element={
-                <RestrictedRoute
-                  redirectTo="/garage"
-                  component={<RegisterPage />}
-                />
-              }
-            />
-            <Route
-              path="/login"
-              element={
-                <RestrictedRoute
-                  redirectTo="/garage"
-                  component={<LoginPage />}
-                />
-              }
-            />
-            <Route
-              path="/garage"
-              element={
-                <PrivateRoute
-                  redirectTo="/login"
-                  component={<GaragePage />}
-                />
-              }
-            />
-          </Route>
-        </Routes>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<HomePage />} />
+              <Route
+                path="/register"
+                element={
+                  <RestrictedRoute
+                    redirectTo="/garage"
+                    component={<RegisterPage />}
+                  />
+                }
+              />
+              <Route
+                path="/login"
+                element={
+                  <RestrictedRoute
+                    redirectTo="/garage"
+                    component={<LoginPage />}
+                  />
+                }
+              />
+              <Route
+                path="/garage"
+                element={
+                  <PrivateRoute
+                    redirectTo="/login"
+                    component={<GaragePage />}
+                  />
+                }
+              />
+            </Route>
+          </Routes>
+        </Router>
       </div>
     </section >
   );
