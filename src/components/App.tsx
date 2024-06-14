@@ -27,9 +27,9 @@ export const App = () => {
   return isRefreshing ? (
     <b>Please wait access...</b>
   ) : (
-    <section className="garage">
-      <div className="container">
-        <Router>
+    <Router>
+      <section className="garage">
+        <div className="container">
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<HomePage />} />
@@ -62,8 +62,8 @@ export const App = () => {
               />
             </Route>
           </Routes>
-        </Router>
-      </div>
-    </section >
+        </div>
+      </section >
+    </Router>
   );
 };
